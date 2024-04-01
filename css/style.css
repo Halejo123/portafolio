@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate:ital@0;1&display=swap');
+
+body {
+    background: #000;
+    margin: 0 auto;
+}
+
+/* nav bar */
+
+nav.bg-pf {
+    background: #000;
+}
+
+nav.bg-pf ul li a {
+    color: #FFFCFC;
+    position: relative;
+    font-family: "Mate", serif; 
+    left: 600px;
+    margin-right: 10px;
+}
+
+nav.bg-pf ul li a::after {
+    width: 0px;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-pf ul li a:hover {
+    color: aqua;
+}
+
+nav.bg-pf ul li a:hover::after {
+    background: aqua;
+    width: 40%;
+}
+
+
+/* hero */
+
+#hero .col-lg-9 img {
+    background-repeat: round;
+    margin: 0 auto;
+    width: 1020px;
+    height: 750px;  
+}
+
+#hero .col-lg-3 h1 {
+    color: aliceblue;
+    position: relative;
+    font-family: "Bebas Neue", sans-serif; 
+    text-align: center;
+    top: 30px;
+    left: 248px;
+}
+
+#hero .col-lg-3 p {
+    color: aliceblue;
+    position: relative;
+    text-align: left;
+    font-family: "Mate", serif; 
+    font-size: 18px;
+    top: 150px;
+    left: 248px;
+}
+
+.card-container {
+    margin-top: 200px;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 100px; 
+}
+
+/* sobre mi */
+
+.pro1 {
+    background-image: url(../img/dos.jpg);
+    background-repeat: round;
+    padding: 180px; 
+    display: flex;
+    justify-content: center;
+}
+.pro1 h1{
+    position: relative;
+    left: 350px;
+    bottom: 100px;
+    color: #FFFCFC;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.pro1 .card-body {
+    color: #FFFCFC;
+    background: rgba(26, 25, 25, 0.774);
+    transition: transform 0.4s, z-index 0.2s;
+    border-radius: 10px;
+    
+}
+.pro1 .card-body:hover {
+    transform: scale(1.5);
+    z-index: 1
+}
+.pro1 .card-body h5 {
+    margin-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Mate", serif; 
+}
+.pro1 .card-body p {
+    text-align: left;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    font-family: "Mate", serif; 
+}
+
+
+/* habilidades */
+
+
+.habilidades .card1 .card-body p {
+    font-size: 20px;
+    color: #FFFCFC;
+    text-align: center;
+    font-family: "Mate", serif;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+}
+
+.container {
+    background-color: transparent;
+}
+
+.habilidades {
+    background-image: url(../img/tres.jpg);
+    background-repeat: round;
+    padding: 250px; 
+}
+
+.habilidades h1 {
+    margin-left: 620px;
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif; 
+    top: 1600px;
+    color: #FFFCFC;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 20px; 
+}
+
+.card1 {
+    margin: 0 auto;
+    padding-top: 20px;
+    color: #FFFCFC;
+    transition: transform 0.4s, z-index 0.2s;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.habilidades .container div.card-body {
+    background: rgba(26, 25, 25, 0.774);
+    width: 400px;
+    height: 300px;
+    border: none;
+    display: inline-flex;
+    border-radius: 10px;
+}
+
+.habilidades .container .card-body p {
+    color: #FFFCFC;
+    margin: 0 auto;
+    border: none;
+    font-family: "Mate", serif;
+    margin-top: 20px;
+}
+
+.habilidades .container .card {
+    margin-bottom: 50px;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pro {
+    background-image: url(../img/cuatro.jpg);
+    background-repeat: round;
+    padding: 250px; 
+    display: flex;
+    justify-content: center;
+}
+
+.pro div h1 {
+    color: #FFFCFC;
+    position: relative;
+    left: 480px;
+    bottom: 50px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.card {
+    background: rgba(26, 25, 25, 0.774);
+    color: #FFFCFC;
+    transition: transform 0.4s, z-index 0.2s;
+    position: relative;
+    bottom: 70px;
+}
+
+.card:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+
+/* Hobbis */
+
+
+.Hob {
+    background-image: url(../img/cinco.jpg);
+    background-repeat: round;
+    padding: 250px; 
+    display: flex;
+    justify-content: center;
+}
+
+
+.Hob > div > h1 {
+    color: #FFFCFC;
+    position: relative;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.Hob img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 40px; 
+}
+
+.Hob div.col h1 {
+    color: #FFFCFC;
+    margin-top: 50px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.Hob div.col p {
+    color: #FFFCFC;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    left: 80px;
+    top: 10px;
+    font-family: "Mate", serif; 
+}
+
+/* Estudios */
+
+.estudios {
+    background-image: url(../img/seis.jpg);
+    background-repeat: round;
+    padding: 250px; 
+    display: flex;
+    justify-content: center;
+}   
+.estudios h1 {
+    color: #FFFCFC;
+    position: relative;
+    left: 490px;
+    bottom: 100px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .column1 {
+    text-align: center;
+  }
+  
+  .column1 img {
+    width: 400px; 
+    height: auto; 
+    position: relative;
+    right:150px;
+    margin: 10px 10px 10px 100px;
+  }
+  
+  .column1 p {
+    color: #FFFCFC;
+    position: relative;
+    top: 70px;
+    right:120px;
+    font-family: "Mate", serif; 
+    
+  }
+
+  /* footer */
+
+
+  footer{
+    background-image: url(../img/final.jpg);
+    background-repeat: round;
+    padding: 250px; 
+    display: flex;
+    justify-content: center;
+  }
+  footer h1{
+    justify-content: center;
+    margin-bottom: 300px;
+    position: relative;
+    bottom: 100px;
+    left: 250px;
+    font-size: 40px;
+    color: #FFFCFC;
+    font-family: "Bebas Neue", sans-serif; 
+  }
+
+  .column3-text {
+    text-align: left;
+    color: #FFFCFC;
+    font-family: "Mate", serif;
+    font-size: 40px;
+    position: relative;
+    right: 300px;
+    top: 60px;
+
+}
+
+.column3-image {
+    text-align: right;
+}
+
+.column3-image img {
+        width: 120px;
+        height: 120px;
+        margin: 30px 20px 10px 10px;
+}
+
+
+
+
+
+
+
